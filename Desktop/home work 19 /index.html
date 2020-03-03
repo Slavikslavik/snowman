@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home work 21</title>
+</head>
+<body>
+    <canvas id="canvas" height="1000" width="1000"></canvas>
+</body>
+<script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        ctx.lineWidth = '4';
+        ctx.strokeStyle = 'DeepPink';
+
+        function circle(x,y,r){
+            ctx.beginPath();
+            ctx.fillStyle = 'skyblue'
+            ctx.arc(x, y, r, 0, Math.PI*2, false);
+            ctx.stroke();
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(x,y = y - r - r/2, r = r/2, 0, Math.PI*2, false);
+            ctx.stroke();
+            ctx.fillStyle = 'skyblue'
+            ctx.fill();
+        };
+        circle(200,200,20);
+
+        
+</script>
+</html>
